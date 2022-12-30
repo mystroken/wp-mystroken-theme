@@ -18,18 +18,20 @@
  * Edit this array to fit your needs.
  */
 return array(
-	// Event Post Type.
-	'event'  => array(
-		'label'                 => __( 'Event', 'genese' ),
-		'description'           => __( 'Event Description', 'genese' ),
+	// Case Study Post Type.
+	'case-study'  => array(
+		'label'                 => __( 'Case Study', 'genese' ),
+		'description'           => __( 'Case Study Description', 'genese' ),
 		'labels'                => array(
-			'name'                  => _x( 'Events', 'Post Type General Name', 'genese' ),
-			'singular_name'         => _x( 'Event', 'Post Type Singular Name', 'genese' ),
-			'menu_name'             => __( 'Events', 'genese' ),
-			'name_admin_bar'        => __( 'Event', 'genese' ),
+			'name'                  => _x( 'Case Studies', 'Post Type General Name', 'genese' ),
+			'singular_name'         => _x( 'Case Study', 'Post Type Singular Name', 'genese' ),
+			'menu_name'             => __( 'Case Studies', 'genese' ),
+			'name_admin_bar'        => __( 'Case Study', 'genese' ),
+			'add_new_item'          => __( 'Add New Case Study', 'genese' ),
+			'all_items'             => __( 'All Case Studies', 'genese' ),
 		),
 		'supports'              => array('title', 'editor', 'thumbnail', 'custom-fields', ),
-		'rewrite'               => array('slug' => 'event', 'with_front' => false),
+		'rewrite'               => array('slug' => 'case-studies', 'with_front' => false),
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,
@@ -46,39 +48,7 @@ return array(
 
 		'show_in_rest' => true,
 		'show_in_graphql' => true,
-		'graphql_single_name' => 'event',
-		'graphql_plural_name' => 'events',
-	),
-
-	// People Post Type.
-	'people' => array(
-		'label'                 => __( 'People', 'genese' ),
-		'description'           => __( 'People Description', 'genese' ),
-		'labels'                => array(
-			'name'                  => _x( 'People', 'Post Type General Name', 'genese' ),
-			'singular_name'         => _x( 'Person', 'Post Type Singular Name', 'genese' ),
-			'menu_name'             => __( 'People', 'genese' ),
-			'name_admin_bar'        => __( 'People', 'genese' ),
-		),
-		'supports'              => array('title', 'editor', 'thumbnail', 'custom-fields', ),
-		'rewrite'               => array('slug' => 'people', 'with_front' => false),
-		'hierarchical'          => false,
-		'public'                => true,
-		'show_ui'               => true,
-		'show_in_menu'          => true,
-		'menu_position'         => 5,
-		'menu_icon'				=> 'dashicons-universal-access-alt',
-		'show_in_admin_bar'     => true,
-		'show_in_nav_menus'     => true,
-		'can_export'            => true,
-		'has_archive'           => true,
-		'exclude_from_search'   => false,
-		'publicly_queryable'    => true,
-		'capability_type'       => 'page',
-
-		'show_in_rest' => true,
-		'show_in_graphql' => true,
-		'graphql_single_name' => 'people',
-		'graphql_plural_name' => 'people',
+		'graphql_single_name' => 'caseStudy',
+		'graphql_plural_name' => 'caseStudies',
 	),
 );
