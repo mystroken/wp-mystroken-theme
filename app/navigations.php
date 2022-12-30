@@ -21,7 +21,7 @@ $nav_menus = array(
 	// Primary Navigation.
 	'primary'  => __( 'Primary Navigation', 'genese' ),
 	// Secondary Navigation.
-	'social' => __( 'Social Network Links', 'genese' ),
+	'networks' => __( 'Social Network Links', 'genese' ),
 	// Footer Navigation.
 //	'footer'   => __( 'Footer Navigation', 'genese' ),
 );
