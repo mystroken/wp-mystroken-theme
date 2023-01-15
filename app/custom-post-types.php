@@ -31,7 +31,7 @@ return array(
 			'all_items'             => __( 'All Case Studies', 'genese' ),
 		),
 		'supports'              => array('title', 'editor', 'thumbnail', 'custom-fields', ),
-		'rewrite'               => array('slug' => 'case-studies', 'with_front' => false),
+		'rewrite'               => array('slug' => 'case', 'with_front' => false),
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,
