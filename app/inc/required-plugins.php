@@ -75,6 +75,12 @@ function genese_register_required_plugins() {
 			'required'  => true,
 		),
 
+		array(
+			'name'        => 'YARPP – Yet Another Related Posts Plugin',
+			'slug'        => 'yet-another-related-posts-plugin',
+			'required'  => true,
+		),
+
 	);
 
 	/*
